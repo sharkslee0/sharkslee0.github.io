@@ -11,6 +11,7 @@ import MDSpinner from "react-md-spinner"
 
 import Divider from "components/Divider"
 import Bio from "components/Bio"
+import MyGiscus from "components/Giscus"
 
 const ArticleButtonContainer = styled.div`
   display: flex;
@@ -164,18 +165,20 @@ const Comment = () => {
 
       <HiddenWrapper isHidden={spinner}>
         <HiddenWrapper isHidden={theme === "light"}>
-          <Utterances
+          {/* <Utterances
             repo={utterances.repo}
             theme={`github-dark`}
             issueTerm={utterances.type}
-          />
+          /> */}
+          <MyGiscus theme={`dark_dimmed`}></MyGiscus>
         </HiddenWrapper>
         <HiddenWrapper isHidden={theme === "dark"}>
-          <Utterances
+          {/* <Utterances
             repo={utterances.repo}
             theme={`github-light`}
             issueTerm={utterances.type}
-          />
+          /> */}
+          <MyGiscus theme={`light`}></MyGiscus>
         </HiddenWrapper>
       </HiddenWrapper>
     </>
