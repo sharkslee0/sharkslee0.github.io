@@ -1,3 +1,4 @@
 User-agent: *
-Sitemap: https://www.ng-lee.github.io/sitemap-index.xml
-Host: https://www.ng-lee.github.io
+Allow: /
+Sitemap: https://devhudi.github.io/sitemap-index.xml
+Host: https://devhudi.github.io
