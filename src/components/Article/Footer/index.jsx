@@ -3,9 +3,6 @@ import { navigate } from "gatsby"
 import { useSelector } from "react-redux"
 import styled, { useTheme } from "styled-components"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
-import { Utterances } from "utterances-react-component"
-
-import { utterances } from "../../../../blog-config"
 
 import MDSpinner from "react-md-spinner"
 
@@ -121,7 +118,7 @@ const SpinnerWrapper = styled.div`
 
 const HiddenWrapper = styled.div`
   height: ${props => (props.isHidden ? "0px" : "auto")};
-  overflow: ${props => (props.isHidden ? "hidden" : "auto")};
+  overflow: ${props => (props.isHidden ? "hidden" : "none")};
 `
 
 const ArticleButton = ({ right, children, onClick }) => {
@@ -165,19 +162,9 @@ const Comment = () => {
 
       <HiddenWrapper isHidden={spinner}>
         <HiddenWrapper isHidden={theme === "light"}>
-          {/* <Utterances
-            repo={utterances.repo}
-            theme={`github-dark`}
-            issueTerm={utterances.type}
-          /> */}
           <MyGiscus theme={`dark_dimmed`}></MyGiscus>
         </HiddenWrapper>
         <HiddenWrapper isHidden={theme === "dark"}>
-          {/* <Utterances
-            repo={utterances.repo}
-            theme={`github-light`}
-            issueTerm={utterances.type}
-          /> */}
           <MyGiscus theme={`light`}></MyGiscus>
         </HiddenWrapper>
       </HiddenWrapper>

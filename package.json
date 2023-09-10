@@ -48,8 +48,7 @@
     "redux": "^4.2.1",
     "sharp": "^0.32.1",
     "styled-components": "^5.2.1",
-    "styled-reset": "^4.4.7",
-    "utterances-react-component": "^1.0.0"
+    "styled-reset": "^4.4.7"
   },
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1",
@@ -71,7 +70,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy-gh": "gatsby build && gh-pages -d public",
+    "deploy-gh": "gatsby clean && gatsby build && gh-pages -d public",
     "deploy-gh-prefix-paths": "gatsby build --prefix-paths && gh-pages -d public",
     "check:lint": "eslint . --ext .js,.jsx",
     "fix:lint": "eslint . --fix --ext .js,.jsx",
