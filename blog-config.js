@@ -1,10 +1,10 @@
 module.exports = {
-  title: "ng-lee.github.io",
+  title: "namgons.github.io",
   description: "안녕하세요 :)",
-  author: "ng-lee",
-  siteUrl: "https://ng-lee.github.io/",
+  author: "namgons",
+  siteUrl: "https://namgons.github.io/",
   links: {
-    github: "https://github.com/ng-lee",
+    github: "https://github.com/namgons",
     linkedIn: "https://www.linkedin.com/in/namgonlee/",
     email: "mailto:nglee.dev@gmail.com",
   },
