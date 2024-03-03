@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ng-lee.github.io/sitemap-index.xml
-Host: https://ng-lee.github.io
+Sitemap: https://namgons.github.io/sitemap-index.xml
+Host: https://namgons.github.io
