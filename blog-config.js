@@ -1,5 +1,5 @@
 module.exports = {
-  title: "develog",
+  title: "pointing the dots",
   description: "안녕하세요 :)",
   author: "namgons",
   siteUrl: "https://namgons.github.io/",
