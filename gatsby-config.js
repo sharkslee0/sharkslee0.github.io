@@ -36,6 +36,12 @@ module.exports = {
         display: "swap",
       },
     },
+    {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: ["G-K70E7G3BN5"],
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-remark-reading-time",
     `gatsby-plugin-react-helmet`,
