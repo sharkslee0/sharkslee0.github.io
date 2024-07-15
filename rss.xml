@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of pointing the dots]]></title><description><![CDATA[안녕하세요 :)]]></description><link>https://namgons.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Jul 2024 11:52:29 GMT</lastBuildDate><item><title><![CDATA[[백준/BOJ] 2283. 구간 자르기 (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/2283 ☘️ 풀이 한 점에 그 점을 포함하는 구간이 몇 개나 있는지를 확인하는 것이 중요합니다. 예를 들어, 2인 점을 포함하는 구간이…]]></description><link>https://namgons.github.io/boj-2283/</link><guid isPermaLink="false">https://namgons.github.io/boj-2283/</guid><pubDate>Mon, 08 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of pointing the dots]]></title><description><![CDATA[안녕하세요 :)]]></description><link>https://namgons.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Jul 2024 12:18:35 GMT</lastBuildDate><item><title><![CDATA[[백준/BOJ] 2283. 구간 자르기 (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/2283 ☘️ 풀이 한 점에 그 점을 포함하는 구간이 몇 개나 있는지를 확인하는 것이 중요합니다. 예를 들어, 2인 점을 포함하는 구간이…]]></description><link>https://namgons.github.io/boj-2283/</link><guid isPermaLink="false">https://namgons.github.io/boj-2283/</guid><pubDate>Mon, 08 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2283&quot;&gt;https://www.acmicpc.net/problem/2283&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;☘️ 풀이&lt;/h2&gt;
 &lt;p&gt;한 점에 그 점을 포함하는 구간이 몇 개나 있는지를 확인하는 것이 중요합니다. 예를 들어, 2인 점을 포함하는 구간이 3개가 있다고 해보겠습니다. 정답이 되는 구간이 2를 포함하고 있지 않다가 2를 포함하게 되면, 구간에 포함된 길이의 합은 2를 포함하는 구간의 갯수인 3만큼 증가하게 됩니다. 반대로 2를 포함하지 않게 된다면, 3만큼 감소하게 됩니다.&lt;/p&gt;
@@ -140,90 +140,7 @@ INF &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&
                 visited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;ny&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;nx&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; cost
                 que&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ny&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; nx&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 2560. 짚신벌레 (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/256…]]></description><link>https://namgons.github.io/boj-2560/</link><guid isPermaLink="false">https://namgons.github.io/boj-2560/</guid><pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2560&quot;&gt;https://www.acmicpc.net/problem/2560&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;☘️ 풀이&lt;/h2&gt;
-&lt;p&gt;짚신벌레는 태어난지 &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;날이 지나고 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;날이 될 때까지 개체를 만들어낼 수 있습니다. 반대로 날짜 기준으로 한다면, 현재 날짜를 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;라고 할 때 &lt;code class=&quot;language-text&quot;&gt;day - b&lt;/code&gt;일부터 &lt;code class=&quot;language-text&quot;&gt;day - a&lt;/code&gt;일 사이에 있는 짚신벌레들이 개체를 만들어낼 수 있습니다. 즉, &lt;code class=&quot;language-text&quot;&gt;day - b&lt;/code&gt;일부터 &lt;code class=&quot;language-text&quot;&gt;day - a&lt;/code&gt;일 사이에 있는 짚신벌레의 수만큼 늘어나게 됩니다.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
-    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
-      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/79d45043d75c616da5336178d5b58c43/d7258/boj-2560-01.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
-    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 110.58823529411765%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC1klEQVR42o1VbU8aQRC+n21M/Gyi0W8NDSTGxJDQVqIpgWJCVOgHDaaAtupR3uEAobwFTnm726czexweFC2TTHZud2d2dnae5xSsKYYAvqpAMA38qALXFcCbAu4b1roQ1qisE2xiAqUe8Pkn4L8Hvv0GogXAFae5X0Ct7wgoyGI1TRO2PZ+TuwQ6zyYSmonRVGAwEtDHNJI+k75MBG40gfHU2vtuhrNDyRmo9Bev5rSzbYGJYX0ojUYD6XQau7u7eHh4QLlcRqlUklosFlGv13F2dga32y3tfKGAIq/NNJfPQ6tWUaD5ZrMJha9qGAYymQwmk4m0R6MRxuOxHFl6vZ4MzsLzTuXSsA8r2wpvDIVCuLy8RDAYRDablY58EEuVTg+Hw7i4uEAgEJBOtui6jqurK5yfn8Pn+4RkMgklkUjA5XJhZ2cHJycn4G/ZJnQiCx+yubkpr+z3+zEcDucBW60W9vb2ZLkODg4QjUatV2ZnzsjOalnssjize30YseA7bxt7cZXDKnt5zh7fb5vZJq6zqqpvBnWK8l4PmjPnVCol6/O/YCsDss9C83KrUDsNBoO1ML8QcEoPO5wSdg1L2TYsRK2V3TygOdubrAEfCfBfCPDFLnBEbPLhmjI0rFzXCSlfme9YogCxokAoLRBQBdGTQCQr4L4RRFcCf3RTBjWXCMTZNhIpsolpr9q0Rmft7Iy6QyaAf8lhZYYMn3ani3xDR7fbk7jtOcZBv49MvoLvCRUv+oD2dK01Urb5sR4fH6FpmsS+0mq1JV5rVQ31pyfUiFHqM+V5dopEIvAQ9DqdjnR0rnNghi5jnWE5h56N32X4vQU5Z/Pb/vLKzCQbGxs4PDwkxvDh+Ph4vsgnbm9vY39/H6enp/B6vbi7u7N+C9SbNnlsbW3B4/GAuVXJE0HG43FJQQyxXC732pfTKW5vbxGLxSQ1MbU9UVmc9MbEyv5MwlzDv7FFg8XjFHoIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;boj-2560-01&apos; title=&apos;&apos; src=&apos;/static/79d45043d75c616da5336178d5b58c43/ca1dc/boj-2560-01.png&apos; srcset=&apos;/static/79d45043d75c616da5336178d5b58c43/e7570/boj-2560-01.png 170w,
-/static/79d45043d75c616da5336178d5b58c43/f46e7/boj-2560-01.png 340w,
-/static/79d45043d75c616da5336178d5b58c43/ca1dc/boj-2560-01.png 680w,
-/static/79d45043d75c616da5336178d5b58c43/d7258/boj-2560-01.png 966w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;boj-2560-01&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;같은 조건이 반복되고, 이전의 값이 계속 사용되어 저장해야 한다는 점에서 dp를 생각해볼 수 있습니다. 이때 저장되는 dp 값은 다음과 같이 정의할 수 있습니다. 단, 이때는 죽는 짚신벌레는 고려하지 않습니다. (이유는 아래에서 설명합니다.)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;dp[day] : 0일부터 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;일&lt;strong&gt;까지&lt;/strong&gt; 생존하는 짚신벌레의 수&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;dp에 저장되는 값이 누적합의 형태이기 때문에, &lt;code class=&quot;language-text&quot;&gt;day - b&lt;/code&gt;일부터 &lt;code class=&quot;language-text&quot;&gt;day - a&lt;/code&gt;일 사이에 있는 짚신벌레의 수는 &lt;code class=&quot;language-text&quot;&gt;dp[day - a] - dp[day - b]&lt;/code&gt;와 같습니다. 따라서, 점화식을 다음과 같이 세울 수 있습니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;dp[day] = dp[day - 1] + dp[day - a] - dp[day - b]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이와 비슷한 논리로 짚신벌레는 태어난지 &lt;code class=&quot;language-text&quot;&gt;d&lt;/code&gt;일째에 죽는다는 것은 0일부터 &lt;code class=&quot;language-text&quot;&gt;d&lt;/code&gt;일까지 생존한다는 것입니다. 반대로 현재 날짜 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;에 살아있는 짚신벌레의 수는 &lt;code class=&quot;language-text&quot;&gt;day - d&lt;/code&gt;일과 현재인 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;일 사이에 있는 짚신벌레의 수입니다.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
-    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
-      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/13292be6402a64e57bad38da304d10d9/5b400/boj-2560-02.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
-    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 122.94117647058822%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAABYlAAAWJQFJUiTwAAADH0lEQVR42o1UW2saQRTef9pAAnlKHkLA5KUIhj60NOSlfQm1gUL7UAJikhbbqtSEtGptItb73fVSNV5ixHhZ5+ucWddrNnbgY3YP3zlzzpwzn4SpxTiGTP2+6wFfEsBZFPgUA6pt4Cv/d8uA3FQ5Gnd6SfMGNiJRAIMNeGoH3vuBdAP4GACenwPvrme5CwE1e6EFuDKArwB488Apz+4zz84WV/89+cn/b85xpYGuMheQ8WOGIneGYElBtj7kpTDc9xkUvitDFd2BCvruK+ru4wc0Oqov+VCsmQyT/G6qncl96i2t1GAFaN7P8qVKpYJ0Oo0q31+8PID19Axky2SyyOVkHeSQzWaRkYvIyXnOzQhbsViEVK/XRYBut4e35jc4d7nQ6/VQLpeFXQ/k127fib3ZbKJarQqIkjudjohOp1Ag2hVFwWPr5uYGgUAApVIJ+XxexBh3+fDwECaTCVtbW9jb24PBYBAOYtaGQ3HZBO2Qk5MTGI1GrK+vY39/Hzs7OwgGg5OAdJLb7YbZbIbf7xf/7XZ7qglsDFpXV1e4uLjA0dGR8IvFYiLTmcFmTL+vlBllutht9vBgE3kaGlHbPR6PmATNRhztkHkfSX/WVEKr1YLFYoHD4cD/LOmx4WWjgQ2HI6KTajUMj9yOfsC58Etfz1K1yfJneHAJPPsOWEIMqRrw6ifwgStPsrZEbcbdZKoODnhDA2XAyK/ttRv4lgQSPMhpBDA5AUdSzbY70JOv0Uk/uHhe5rh8FVWQmLpHNj8fs2sON79KL5euXxyOFFsQ2Rn58uRUaZq042GoE8Dgzakyp9kW5OvPX2UUcEmLRpRwhRKYyzAejyMUCnGEIXNRiEajfEzCApFIRBfks7LyBFarVQw9vWWSNKnf748fPslWt9sVkz8YDMQ32eah+fh8PtRqNcEnLtnFHVI2JF+kMBRIluXxIOu9caqE+I1GY0ZIJNK+1dVV7O7uYnNzE8fHx0KObDbbWBjmnyMpy8bGBra3t7G2tgav1zuWOolKSCQSKBQKsNvtuL29FdnSrpchlZZKpUQVTqdTKLjG/QfDMWGGoM3pWgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;boj-2560-02&apos; title=&apos;&apos; src=&apos;/static/13292be6402a64e57bad38da304d10d9/ca1dc/boj-2560-02.png&apos; srcset=&apos;/static/13292be6402a64e57bad38da304d10d9/e7570/boj-2560-02.png 170w,
-/static/13292be6402a64e57bad38da304d10d9/f46e7/boj-2560-02.png 340w,
-/static/13292be6402a64e57bad38da304d10d9/ca1dc/boj-2560-02.png 680w,
-/static/13292be6402a64e57bad38da304d10d9/5b400/boj-2560-02.png 770w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;boj-2560-02&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;추가 1) 코드 구현 시 뺄셈을 할 때, 음수값이 발생할 수 있기 때문에 나누는 수(1000)으로 한 번 더 해줍니다.&lt;/p&gt;
-&lt;p&gt;추가 2) &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;를 하나씩 늘리며 하루하루 진행할 때, 죽는 짚신벌레의 수를 빼주지 않아도 됩니다. 어차피 b &amp;#x3C; d이기 때문에, 태어난 지 &lt;code class=&quot;language-text&quot;&gt;d&lt;/code&gt;일이 지난 짚신벌레는 번식을 하지 못해 짚신벌레의 수를 늘리는데 영향을 주지 않습니다.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
-    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
-      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/e7408b9d4be0b8d2b440411fb1f4ed62/6a350/boj-2560-03.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
-    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 92.3529411764706%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAACbUlEQVR42qWU608aQRTF9+/vp7YxBWPamBgjPmqtBqGilkWkLG93WdmVpbwUH2CxqDEFd3+d2VYSk7ZBO8nNJDeTM+ec+1BisRjz8/Mkk0m2t7cJhUKkUikSiQQzMzOsr68jj+u6THKUZrOJjFarxWnrlGq1SqPR8MO2bT8vj+d5kwGenZ9hWzbdXpdLerhMxuSvgHNzc7x++Yq99B4feM+1e43EdD3XlzkpszHgkZAYWgzhVB2EUIbuSOj7D4aO8Gp2dpZirkibFiPvF6D3TFTFi0bg3Vu6xQIqu2w4t7T6/C7EMwC/aRrny8t0rQpFChTPhxz37hj9uHsew43YFi+mpkjncnwRHKu3HuFYCv2g+KT+GwMelEosLy5iVSwsDOoDsBoX1Ko27fbxk3rQB4zH4wSDQTQtQ4Y91JN7jK898tm0mJ79R4CTACuqqrKwsIBuGsLDNLmLe8oCsGLqfBafyTF8kmQ5s7K5jXKZvHCx1BthNftY4gNVTZDNZn1mo9GI4XA49lTm/sRYWfu4xnRwGi2fIU6UXNdjN3NEKhknKwplmiaVSgW5ROSiKAnP/1UsRctorK6uopcNykK0/d3FdDoYeskHarfbdDodDg8P/ZBL4+bmhqurK/r9vs/8ga38RJGSAoEAeTEpphC9Iwr7af+QpLrL5maEcDhMNCqYC7a1Wg1ZxJWVFZaWlnzvB4PBo4IphULBf1B1HGzB0bj00I9OsCsmhiFYC28tyxqzk4zr9bq/8nRd9/PSFnk7AkORPwXeBEikksLBNbbaLjuaTTa9T1x0gCzaw/KV4JKl3JkyZE5GJBLxb/nuJxtyNoghbeaPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;boj-2560-03&apos; title=&apos;&apos; src=&apos;/static/e7408b9d4be0b8d2b440411fb1f4ed62/ca1dc/boj-2560-03.png&apos; srcset=&apos;/static/e7408b9d4be0b8d2b440411fb1f4ed62/e7570/boj-2560-03.png 170w,
-/static/e7408b9d4be0b8d2b440411fb1f4ed62/f46e7/boj-2560-03.png 340w,
-/static/e7408b9d4be0b8d2b440411fb1f4ed62/ca1dc/boj-2560-03.png 680w,
-/static/e7408b9d4be0b8d2b440411fb1f4ed62/6a350/boj-2560-03.png 832w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;boj-2560-03&lt;/figcaption&gt;
-  &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;8일째에 생존하는 짚신벌레의 수를 구할 때, 우선 죽는 것을 고려하지 않고 개체수를 늘립니다. 그리고 태어난 지 6일이 지난 짚신벌레 즉, 2일(8-6)에 살아있는 짚신벌레의 수만큼 빼주면 됩니다.&lt;/p&gt;
-&lt;p&gt;위에서 dp의 정의를 0일부터 현재까지 살아있는 짚신벌레의 수로 정했습니다. 죽은 짚신벌레를 빼기 위해 다음과 같이 코드를 짜게 된다면 중복으로 빠지는 짚신벌레가 발생하게 됩니다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;for day in range(1, n + 1):
-    dp[day] = dp[day - 1]
-    if a &amp;lt;= day:
-        dp[day] = (dp[day] + dp[day - a]) % DIV
-    if b &amp;lt;= day:
-        dp[day] = (dp[day] - dp[day - b] + DIV) % DIV
-    if d &amp;lt;= day:
-        dp[day] = (dp[day] - dp[day - d] + DIV) % DIV # 이미 빠진 개체도 또 빠지게 됩니다. (dp의 값이 누적합이기 때문에)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;어차피 죽는 개체는 이미 번식을 하지 못하기 때문에, 먼저 죽는 것을 고려하지 않고 짚신벌레의 수를 구한 이후에 한 번에 죽는 개체수를 빼주면 됩니다.&lt;/p&gt;
-&lt;h2&gt;☘️ 전체 코드 (파이썬)&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import sys
-
-input = sys.stdin.readline
-
-DIV = 1000
-
-
-a, b, d, n = map(int, input().split())
-dp = [0] * (n + 1)
-dp[0] = 1
-
-for day in range(1, n + 1):
-    dp[day] = dp[day - 1]
-    if a &amp;lt;= day:
-        dp[day] = (dp[day] + dp[day - a]) % DIV
-    if b &amp;lt;= day:
-        dp[day] = (dp[day] - dp[day - b] + DIV) % DIV
-
-answer = dp[n]
-if d &amp;lt;= n:
-    answer = (answer - dp[n - d] + DIV) % DIV
-
-print(answer)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 3020. 개똥벌레 (파이썬/자바)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/3020 ☘️ 풀이 높이가 n인 장애물은 1~n 사이의 높이로 날아가는 경우에도 모두 부딪히게 됩니다. 예를 들어, 높이가 4인 장애물은 높이 1로 날라가도, 높이…]]></description><link>https://namgons.github.io/boj-3020/</link><guid isPermaLink="false">https://namgons.github.io/boj-3020/</guid><pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 3020. 개똥벌레 (파이썬/자바)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/3020 ☘️ 풀이 높이가 n인 장애물은 1~n 사이의 높이로 날아가는 경우에도 모두 부딪히게 됩니다. 예를 들어, 높이가 4인 장애물은 높이 1로 날라가도, 높이…]]></description><link>https://namgons.github.io/boj-3020/</link><guid isPermaLink="false">https://namgons.github.io/boj-3020/</guid><pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/3020&quot;&gt;https://www.acmicpc.net/problem/3020&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;☘️ 풀이&lt;/h2&gt;
 &lt;p&gt;높이가 n인 장애물은 1~n 사이의 높이로 날아가는 경우에도 모두 부딪히게 됩니다. 예를 들어, 높이가 4인 장애물은 높이 1로 날라가도, 높이 2로 날라가도, 높이 3으로 날라가도, 높이 4로 날라가도 모두 부딪힙니다. 이를 이용해서 우선 각 높이들의 갯수을 모두 입력 받은 다음, 각 장애물의 높이보다 낲은 높이에도 모두 갯수를 표시합니다.&lt;/p&gt;
@@ -352,7 +269,90 @@ lis &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&
         index &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; lowerBound&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lis&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
         lis&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;index&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 
-&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lis&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 11066. 파일 합치기 (파이썬/자바)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/11066 ☘️ 풀이 (C1, C2, C3, C4)로 묶인 임시 파일과 (C5, C6)으로 묶인 임시 파일은 합치는 경우, 발생하는 비용은 C1 + C2 + ... + C…]]></description><link>https://namgons.github.io/boj-11066/</link><guid isPermaLink="false">https://namgons.github.io/boj-11066/</guid><pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;n &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;lis&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 2560. 짚신벌레 (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/256…]]></description><link>https://namgons.github.io/boj-2560/</link><guid isPermaLink="false">https://namgons.github.io/boj-2560/</guid><pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/2560&quot;&gt;https://www.acmicpc.net/problem/2560&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;☘️ 풀이&lt;/h2&gt;
+&lt;p&gt;짚신벌레는 태어난지 &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;날이 지나고 &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;날이 될 때까지 개체를 만들어낼 수 있습니다. 반대로 날짜 기준으로 한다면, 현재 날짜를 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;라고 할 때 &lt;code class=&quot;language-text&quot;&gt;day - b&lt;/code&gt;일부터 &lt;code class=&quot;language-text&quot;&gt;day - a&lt;/code&gt;일 사이에 있는 짚신벌레들이 개체를 만들어낼 수 있습니다. 즉, &lt;code class=&quot;language-text&quot;&gt;day - b&lt;/code&gt;일부터 &lt;code class=&quot;language-text&quot;&gt;day - a&lt;/code&gt;일 사이에 있는 짚신벌레의 수만큼 늘어나게 됩니다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/79d45043d75c616da5336178d5b58c43/d7258/boj-2560-01.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 110.58823529411765%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC1klEQVR42o1VbU8aQRC+n21M/Gyi0W8NDSTGxJDQVqIpgWJCVOgHDaaAtupR3uEAobwFTnm726czexweFC2TTHZud2d2dnae5xSsKYYAvqpAMA38qALXFcCbAu4b1roQ1qisE2xiAqUe8Pkn4L8Hvv0GogXAFae5X0Ct7wgoyGI1TRO2PZ+TuwQ6zyYSmonRVGAwEtDHNJI+k75MBG40gfHU2vtuhrNDyRmo9Bev5rSzbYGJYX0ojUYD6XQau7u7eHh4QLlcRqlUklosFlGv13F2dga32y3tfKGAIq/NNJfPQ6tWUaD5ZrMJha9qGAYymQwmk4m0R6MRxuOxHFl6vZ4MzsLzTuXSsA8r2wpvDIVCuLy8RDAYRDablY58EEuVTg+Hw7i4uEAgEJBOtui6jqurK5yfn8Pn+4RkMgklkUjA5XJhZ2cHJycn4G/ZJnQiCx+yubkpr+z3+zEcDucBW60W9vb2ZLkODg4QjUatV2ZnzsjOalnssjize30YseA7bxt7cZXDKnt5zh7fb5vZJq6zqqpvBnWK8l4PmjPnVCol6/O/YCsDss9C83KrUDsNBoO1ML8QcEoPO5wSdg1L2TYsRK2V3TygOdubrAEfCfBfCPDFLnBEbPLhmjI0rFzXCSlfme9YogCxokAoLRBQBdGTQCQr4L4RRFcCf3RTBjWXCMTZNhIpsolpr9q0Rmft7Iy6QyaAf8lhZYYMn3ani3xDR7fbk7jtOcZBv49MvoLvCRUv+oD2dK01Urb5sR4fH6FpmsS+0mq1JV5rVQ31pyfUiFHqM+V5dopEIvAQ9DqdjnR0rnNghi5jnWE5h56N32X4vQU5Z/Pb/vLKzCQbGxs4PDwkxvDh+Ph4vsgnbm9vY39/H6enp/B6vbi7u7N+C9SbNnlsbW3B4/GAuVXJE0HG43FJQQyxXC732pfTKW5vbxGLxSQ1MbU9UVmc9MbEyv5MwlzDv7FFg8XjFHoIAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;boj-2560-01&apos; title=&apos;&apos; src=&apos;/static/79d45043d75c616da5336178d5b58c43/ca1dc/boj-2560-01.png&apos; srcset=&apos;/static/79d45043d75c616da5336178d5b58c43/e7570/boj-2560-01.png 170w,
+/static/79d45043d75c616da5336178d5b58c43/f46e7/boj-2560-01.png 340w,
+/static/79d45043d75c616da5336178d5b58c43/ca1dc/boj-2560-01.png 680w,
+/static/79d45043d75c616da5336178d5b58c43/d7258/boj-2560-01.png 966w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;boj-2560-01&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;같은 조건이 반복되고, 이전의 값이 계속 사용되어 저장해야 한다는 점에서 dp를 생각해볼 수 있습니다. 이때 저장되는 dp 값은 다음과 같이 정의할 수 있습니다. 단, 이때는 죽는 짚신벌레는 고려하지 않습니다. (이유는 아래에서 설명합니다.)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;dp[day] : 0일부터 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;일&lt;strong&gt;까지&lt;/strong&gt; 생존하는 짚신벌레의 수&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;dp에 저장되는 값이 누적합의 형태이기 때문에, &lt;code class=&quot;language-text&quot;&gt;day - b&lt;/code&gt;일부터 &lt;code class=&quot;language-text&quot;&gt;day - a&lt;/code&gt;일 사이에 있는 짚신벌레의 수는 &lt;code class=&quot;language-text&quot;&gt;dp[day - a] - dp[day - b]&lt;/code&gt;와 같습니다. 따라서, 점화식을 다음과 같이 세울 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;dp[day] = dp[day - 1] + dp[day - a] - dp[day - b]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이와 비슷한 논리로 짚신벌레는 태어난지 &lt;code class=&quot;language-text&quot;&gt;d&lt;/code&gt;일째에 죽는다는 것은 0일부터 &lt;code class=&quot;language-text&quot;&gt;d&lt;/code&gt;일까지 생존한다는 것입니다. 반대로 현재 날짜 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;에 살아있는 짚신벌레의 수는 &lt;code class=&quot;language-text&quot;&gt;day - d&lt;/code&gt;일과 현재인 &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;일 사이에 있는 짚신벌레의 수입니다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/13292be6402a64e57bad38da304d10d9/5b400/boj-2560-02.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 122.94117647058822%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAACXBIWXMAABYlAAAWJQFJUiTwAAADH0lEQVR42o1UW2saQRTef9pAAnlKHkLA5KUIhj60NOSlfQm1gUL7UAJikhbbqtSEtGptItb73fVSNV5ixHhZ5+ucWddrNnbgY3YP3zlzzpwzn4SpxTiGTP2+6wFfEsBZFPgUA6pt4Cv/d8uA3FQ5Gnd6SfMGNiJRAIMNeGoH3vuBdAP4GACenwPvrme5CwE1e6EFuDKArwB488Apz+4zz84WV/89+cn/b85xpYGuMheQ8WOGIneGYElBtj7kpTDc9xkUvitDFd2BCvruK+ru4wc0Oqov+VCsmQyT/G6qncl96i2t1GAFaN7P8qVKpYJ0Oo0q31+8PID19Axky2SyyOVkHeSQzWaRkYvIyXnOzQhbsViEVK/XRYBut4e35jc4d7nQ6/VQLpeFXQ/k127fib3ZbKJarQqIkjudjohOp1Ag2hVFwWPr5uYGgUAApVIJ+XxexBh3+fDwECaTCVtbW9jb24PBYBAOYtaGQ3HZBO2Qk5MTGI1GrK+vY39/Hzs7OwgGg5OAdJLb7YbZbIbf7xf/7XZ7qglsDFpXV1e4uLjA0dGR8IvFYiLTmcFmTL+vlBllutht9vBgE3kaGlHbPR6PmATNRhztkHkfSX/WVEKr1YLFYoHD4cD/LOmx4WWjgQ2HI6KTajUMj9yOfsC58Etfz1K1yfJneHAJPPsOWEIMqRrw6ifwgStPsrZEbcbdZKoODnhDA2XAyK/ttRv4lgQSPMhpBDA5AUdSzbY70JOv0Uk/uHhe5rh8FVWQmLpHNj8fs2sON79KL5euXxyOFFsQ2Rn58uRUaZq042GoE8Dgzakyp9kW5OvPX2UUcEmLRpRwhRKYyzAejyMUCnGEIXNRiEajfEzCApFIRBfks7LyBFarVQw9vWWSNKnf748fPslWt9sVkz8YDMQ32eah+fh8PtRqNcEnLtnFHVI2JF+kMBRIluXxIOu9caqE+I1GY0ZIJNK+1dVV7O7uYnNzE8fHx0KObDbbWBjmnyMpy8bGBra3t7G2tgav1zuWOolKSCQSKBQKsNvtuL29FdnSrpchlZZKpUQVTqdTKLjG/QfDMWGGoM3pWgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;boj-2560-02&apos; title=&apos;&apos; src=&apos;/static/13292be6402a64e57bad38da304d10d9/ca1dc/boj-2560-02.png&apos; srcset=&apos;/static/13292be6402a64e57bad38da304d10d9/e7570/boj-2560-02.png 170w,
+/static/13292be6402a64e57bad38da304d10d9/f46e7/boj-2560-02.png 340w,
+/static/13292be6402a64e57bad38da304d10d9/ca1dc/boj-2560-02.png 680w,
+/static/13292be6402a64e57bad38da304d10d9/5b400/boj-2560-02.png 770w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;boj-2560-02&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;추가 1) 코드 구현 시 뺄셈을 할 때, 음수값이 발생할 수 있기 때문에 나누는 수(1000)으로 한 번 더 해줍니다.&lt;/p&gt;
+&lt;p&gt;추가 2) &lt;code class=&quot;language-text&quot;&gt;day&lt;/code&gt;를 하나씩 늘리며 하루하루 진행할 때, 죽는 짚신벌레의 수를 빼주지 않아도 됩니다. 어차피 b &amp;#x3C; d이기 때문에, 태어난 지 &lt;code class=&quot;language-text&quot;&gt;d&lt;/code&gt;일이 지난 짚신벌레는 번식을 하지 못해 짚신벌레의 수를 늘리는데 영향을 주지 않습니다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/e7408b9d4be0b8d2b440411fb1f4ed62/6a350/boj-2560-03.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 92.3529411764706%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAACbUlEQVR42qWU608aQRTF9+/vp7YxBWPamBgjPmqtBqGilkWkLG93WdmVpbwUH2CxqDEFd3+d2VYSk7ZBO8nNJDeTM+ec+1BisRjz8/Mkk0m2t7cJhUKkUikSiQQzMzOsr68jj+u6THKUZrOJjFarxWnrlGq1SqPR8MO2bT8vj+d5kwGenZ9hWzbdXpdLerhMxuSvgHNzc7x++Yq99B4feM+1e43EdD3XlzkpszHgkZAYWgzhVB2EUIbuSOj7D4aO8Gp2dpZirkibFiPvF6D3TFTFi0bg3Vu6xQIqu2w4t7T6/C7EMwC/aRrny8t0rQpFChTPhxz37hj9uHsew43YFi+mpkjncnwRHKu3HuFYCv2g+KT+GwMelEosLy5iVSwsDOoDsBoX1Ko27fbxk3rQB4zH4wSDQTQtQ4Y91JN7jK898tm0mJ79R4CTACuqqrKwsIBuGsLDNLmLe8oCsGLqfBafyTF8kmQ5s7K5jXKZvHCx1BthNftY4gNVTZDNZn1mo9GI4XA49lTm/sRYWfu4xnRwGi2fIU6UXNdjN3NEKhknKwplmiaVSgW5ROSiKAnP/1UsRctorK6uopcNykK0/d3FdDoYeskHarfbdDodDg8P/ZBL4+bmhqurK/r9vs/8ga38RJGSAoEAeTEpphC9Iwr7af+QpLrL5maEcDhMNCqYC7a1Wg1ZxJWVFZaWlnzvB4PBo4IphULBf1B1HGzB0bj00I9OsCsmhiFYC28tyxqzk4zr9bq/8nRd9/PSFnk7AkORPwXeBEikksLBNbbaLjuaTTa9T1x0gCzaw/KV4JKl3JkyZE5GJBLxb/nuJxtyNoghbeaPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;boj-2560-03&apos; title=&apos;&apos; src=&apos;/static/e7408b9d4be0b8d2b440411fb1f4ed62/ca1dc/boj-2560-03.png&apos; srcset=&apos;/static/e7408b9d4be0b8d2b440411fb1f4ed62/e7570/boj-2560-03.png 170w,
+/static/e7408b9d4be0b8d2b440411fb1f4ed62/f46e7/boj-2560-03.png 340w,
+/static/e7408b9d4be0b8d2b440411fb1f4ed62/ca1dc/boj-2560-03.png 680w,
+/static/e7408b9d4be0b8d2b440411fb1f4ed62/6a350/boj-2560-03.png 832w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;boj-2560-03&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;8일째에 생존하는 짚신벌레의 수를 구할 때, 우선 죽는 것을 고려하지 않고 개체수를 늘립니다. 그리고 태어난 지 6일이 지난 짚신벌레 즉, 2일(8-6)에 살아있는 짚신벌레의 수만큼 빼주면 됩니다.&lt;/p&gt;
+&lt;p&gt;위에서 dp의 정의를 0일부터 현재까지 살아있는 짚신벌레의 수로 정했습니다. 죽은 짚신벌레를 빼기 위해 다음과 같이 코드를 짜게 된다면 중복으로 빠지는 짚신벌레가 발생하게 됩니다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;for day in range(1, n + 1):
+    dp[day] = dp[day - 1]
+    if a &amp;lt;= day:
+        dp[day] = (dp[day] + dp[day - a]) % DIV
+    if b &amp;lt;= day:
+        dp[day] = (dp[day] - dp[day - b] + DIV) % DIV
+    if d &amp;lt;= day:
+        dp[day] = (dp[day] - dp[day - d] + DIV) % DIV # 이미 빠진 개체도 또 빠지게 됩니다. (dp의 값이 누적합이기 때문에)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;어차피 죽는 개체는 이미 번식을 하지 못하기 때문에, 먼저 죽는 것을 고려하지 않고 짚신벌레의 수를 구한 이후에 한 번에 죽는 개체수를 빼주면 됩니다.&lt;/p&gt;
+&lt;h2&gt;☘️ 전체 코드 (파이썬)&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import sys
+
+input = sys.stdin.readline
+
+DIV = 1000
+
+
+a, b, d, n = map(int, input().split())
+dp = [0] * (n + 1)
+dp[0] = 1
+
+for day in range(1, n + 1):
+    dp[day] = dp[day - 1]
+    if a &amp;lt;= day:
+        dp[day] = (dp[day] + dp[day - a]) % DIV
+    if b &amp;lt;= day:
+        dp[day] = (dp[day] - dp[day - b] + DIV) % DIV
+
+answer = dp[n]
+if d &amp;lt;= n:
+    answer = (answer - dp[n - d] + DIV) % DIV
+
+print(answer)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 11066. 파일 합치기 (파이썬/자바)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/11066 ☘️ 풀이 (C1, C2, C3, C4)로 묶인 임시 파일과 (C5, C6)으로 묶인 임시 파일은 합치는 경우, 발생하는 비용은 C1 + C2 + ... + C…]]></description><link>https://namgons.github.io/boj-11066/</link><guid isPermaLink="false">https://namgons.github.io/boj-11066/</guid><pubDate>Wed, 03 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/11066&quot;&gt;https://www.acmicpc.net/problem/11066&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;☘️ 풀이&lt;/h2&gt;
 &lt;p&gt;(C1, C2, C3, C4)로 묶인 임시 파일과 (C5, C6)으로 묶인 임시 파일은 합치는 경우, 발생하는 비용은 C1 + C2 + ... + C6 입니다. 이렇게 합칠 때마다, 구성 요소들의 파일 크기들을 모두 더하게 됩니다. 연속된 파일들끼리 합치기 때문에 &lt;strong&gt;누적합&lt;/strong&gt;을 이용해서 최적화를 할 수 있습니다.&lt;/p&gt;
@@ -493,7 +493,51 @@ boardCount &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span 
     &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         result&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; boardCount&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;d&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; boardCount&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;c&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;b &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; boardCount&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;d&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; boardCount&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;b &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 
-    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 22862. 가장 긴 짝수 연속한 부분 수열 (large) (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/22862 ☘️ 풀이 조합이나 이중 반복문으로 구간을 잡고 그 구간이 홀수를 최대 k…]]></description><link>https://namgons.github.io/boj-22862/</link><guid isPermaLink="false">https://namgons.github.io/boj-22862/</guid><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 13144. List of Unique Numbers (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/1314…]]></description><link>https://namgons.github.io/boj-13144/</link><guid isPermaLink="false">https://namgons.github.io/boj-13144/</guid><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/13144&quot;&gt;https://www.acmicpc.net/problem/13144&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;☘️ 풀이&lt;/h2&gt;
+&lt;p&gt;조합이나 이중 반복문으로 구간을 잡고 그 구간에 반복되는 숫자가 있는지 검사하는 방법으로 문제를 해결할 수 있습니다. 하지만 이런 방법으로는 시간 초과가 발생할 것입니다. 이중 반복문으로 구간을 잡는다면, 구간을 잡고 그 안에서 검사하기 위해 반복문이 한번 더 필요하기 때문에 총 삼중 반복문이 동작합니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;투포인터&lt;/strong&gt;를 사용해서 구간을 잡고 하나씩 이동해가며 새로 이동한 숫자가 다시 등장한 숫자인지 새로 등장한 숫자인지 판단하면 됩니다.&lt;/p&gt;
+&lt;p&gt;구간 안에 숫자가 포함되었는지 판단하기 위한 배열(&lt;code class=&quot;language-text&quot;&gt;isVisited&lt;/code&gt;)이 필요합니다. &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;의 값을 각각 0으로 두고 다음과 같이 동작합니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;의 숫자가 아직 등장하지 않은 새로운 숫자인 경우
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;isVisited&lt;/code&gt;에 포함됨을 표시합니다.&lt;/li&gt;
+&lt;li&gt;정답(&lt;code class=&quot;language-text&quot;&gt;answer&lt;/code&gt;)에 새로이 만들 수 있는 구간 조합의 갯수를 더합니다.&lt;br&gt;
+지금까지 만들어진 구간이 &lt;code class=&quot;language-text&quot;&gt;1 4 5&lt;/code&gt;(길이 3)이고 구간에 새로 들어오는 숫자가 &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;(길이 1)이라면, 새로 만들 수 있는 구간 조합의 갯수는 새로 만들어지는 구간의 길이(4)만큼 만들어집니다. (&lt;code class=&quot;language-text&quot;&gt;1 7&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;4 7&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;5 7&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;) &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;를 모두 포함하는 구간의 길이는 &lt;code class=&quot;language-text&quot;&gt;right + 1 - left&lt;/code&gt;입니다.&lt;/li&gt;
+&lt;li&gt;right를 하나 이동합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;의 숫자가 이전에 등장한 숫자인 경우
+&lt;ol&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;를 이동시키기 전에 &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;의 숫자는 구간에서 나오게 되기 때문에 &lt;code class=&quot;language-text&quot;&gt;isVisited&lt;/code&gt;에서 포함되지 않음으로 표시합니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;를 하나 이동합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;☘️ 전체 코드 (파이썬)&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
+
+&lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;readline
+
+
+n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+numbers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;split&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+isVisited &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100001&lt;/span&gt;
+
+left&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+answer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; left &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;not&lt;/span&gt; isVisited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        isVisited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
+        answer &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; left
+        right &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        isVisited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
+        left &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;answer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 22862. 가장 긴 짝수 연속한 부분 수열 (large) (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/22862 ☘️ 풀이 조합이나 이중 반복문으로 구간을 잡고 그 구간이 홀수를 최대 k…]]></description><link>https://namgons.github.io/boj-22862/</link><guid isPermaLink="false">https://namgons.github.io/boj-22862/</guid><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/22862&quot;&gt;https://www.acmicpc.net/problem/22862&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;☘️ 풀이&lt;/h2&gt;
 &lt;p&gt;조합이나 이중 반복문으로 구간을 잡고 그 구간이 홀수를 최대 k번 포함하는지 판단하여 문제를 해결할 수 있습니다. 하지만 이런 방법으로는 시간 초과가 발생할 것입니다. 이중 반복문으로 구간을 잡는다면, 구간을 잡고 그 안에서 홀수 갯수를 검사하기 위해 반복문이 한번 더 필요하기 때문에 총 삼중 반복문이 동작합니다.&lt;/p&gt;
@@ -552,50 +596,6 @@ count &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class
     &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         left &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
 
-
-&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;answer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[백준/BOJ] 13144. List of Unique Numbers (파이썬)]]></title><description><![CDATA[☘️ 문제 https://www.acmicpc.net/problem/1314…]]></description><link>https://namgons.github.io/boj-13144/</link><guid isPermaLink="false">https://namgons.github.io/boj-13144/</guid><pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;☘️ 문제&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.acmicpc.net/problem/13144&quot;&gt;https://www.acmicpc.net/problem/13144&lt;/a&gt;&lt;/p&gt;
-&lt;h2&gt;☘️ 풀이&lt;/h2&gt;
-&lt;p&gt;조합이나 이중 반복문으로 구간을 잡고 그 구간에 반복되는 숫자가 있는지 검사하는 방법으로 문제를 해결할 수 있습니다. 하지만 이런 방법으로는 시간 초과가 발생할 것입니다. 이중 반복문으로 구간을 잡는다면, 구간을 잡고 그 안에서 검사하기 위해 반복문이 한번 더 필요하기 때문에 총 삼중 반복문이 동작합니다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;투포인터&lt;/strong&gt;를 사용해서 구간을 잡고 하나씩 이동해가며 새로 이동한 숫자가 다시 등장한 숫자인지 새로 등장한 숫자인지 판단하면 됩니다.&lt;/p&gt;
-&lt;p&gt;구간 안에 숫자가 포함되었는지 판단하기 위한 배열(&lt;code class=&quot;language-text&quot;&gt;isVisited&lt;/code&gt;)이 필요합니다. &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;의 값을 각각 0으로 두고 다음과 같이 동작합니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;의 숫자가 아직 등장하지 않은 새로운 숫자인 경우
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;isVisited&lt;/code&gt;에 포함됨을 표시합니다.&lt;/li&gt;
-&lt;li&gt;정답(&lt;code class=&quot;language-text&quot;&gt;answer&lt;/code&gt;)에 새로이 만들 수 있는 구간 조합의 갯수를 더합니다.&lt;br&gt;
-지금까지 만들어진 구간이 &lt;code class=&quot;language-text&quot;&gt;1 4 5&lt;/code&gt;(길이 3)이고 구간에 새로 들어오는 숫자가 &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;(길이 1)이라면, 새로 만들 수 있는 구간 조합의 갯수는 새로 만들어지는 구간의 길이(4)만큼 만들어집니다. (&lt;code class=&quot;language-text&quot;&gt;1 7&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;4 7&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;5 7&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;7&lt;/code&gt;) &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;를 모두 포함하는 구간의 길이는 &lt;code class=&quot;language-text&quot;&gt;right + 1 - left&lt;/code&gt;입니다.&lt;/li&gt;
-&lt;li&gt;right를 하나 이동합니다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;right&lt;/code&gt;의 숫자가 이전에 등장한 숫자인 경우
-&lt;ol&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;를 이동시키기 전에 &lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;의 숫자는 구간에서 나오게 되기 때문에 &lt;code class=&quot;language-text&quot;&gt;isVisited&lt;/code&gt;에서 포함되지 않음으로 표시합니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;left&lt;/code&gt;를 하나 이동합니다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;☘️ 전체 코드 (파이썬)&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; sys
-
-&lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sys&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;stdin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;readline
-
-
-n &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-numbers &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;split&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-isVisited &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100001&lt;/span&gt;
-
-left&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
-answer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; left &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; n&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;not&lt;/span&gt; isVisited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        isVisited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;right&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;
-        answer &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; right &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; left
-        right &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        isVisited&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;numbers&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;left&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
-        left &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
 
 &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;answer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[whileTrue 프로젝트 후기]]></title><description><![CDATA[프로젝트 시작 계기 2023년 SSAFY를 다니면서 3번의 프로젝트를 진행했고, 2024년이 되면서 프로젝트보다는 알고리즘 문제 풀이나 CS…]]></description><link>https://namgons.github.io/whiletrue-01/</link><guid isPermaLink="false">https://namgons.github.io/whiletrue-01/</guid><pubDate>Thu, 14 Mar 2024 00:00:00 GMT</pubDate><content:encoded>&lt;div align=&apos;center&apos;&gt;
    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 128px; margin-bottom: 16px;&apos;&gt;
