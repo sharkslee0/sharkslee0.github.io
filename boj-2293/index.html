@@ -229,11 +229,11 @@ data-styled.g45[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"yzdKT,ivnFos,"}
 <h2>☘️ 풀이</h2>
 <p>주어진 동전으로 원하는 금액을 만드는 방법을 구하는 문제는 대표적인 dp 문제입니다. 하지만 이 문제에서 한 가지 조건이 있는데, 사용하는 동전의 구성은 같고 순서만 다른 경우는 모두 같은 경우라는 것입니다.</p>
 <p>예를 들어, 사용할 수 있는 동전이 1원과 2원이 있다고 해보겠습니다.</p>
-<p><figure class='gatsby-resp-image-figure' style='margin-bottom: 16px;'>
-    <span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; '>
+<figure>
+    <span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 16px;'>
       <a class='gatsby-resp-image-link' href='/static/044ffd564aeb57da2ec7e9d4b6496805/600f6/boj-2293-01.png' style='display: block' target='_blank' rel='noopener'>
     <span class='gatsby-resp-image-background-image' style="padding-bottom: 31.176470588235293%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA/ElEQVR42pWQbUuDYBSG/f+/ZojkPmxWT9pQWI255ktz4hSWSYxgrZ7H9Epl9DHWfXM4nPPh4j5HC4IAz/PYbDZEUUQYhuR5zmKxoKoqerVty6XSfN/HsiyKokApdQZAc4b07XJcBxRCMBqNyLJsSLff7ynL8gxr+I/6SzTDMBiPxyRJgm3bPK1WPKc7Xk5wODW8fbQU7/Cp/gb9JnQcB9M0h4Su6xKHActwy/0O4urIsjwi8pqDrGlQyK56153VMMtu3yClHF6m9f/TdZ00TZnNZsRxzPV0SrKNcHGwW4v422f7lSC45QaLR/nAWq3xO5tcMX+dMzEniDvBD7ulwhVIEAKJAAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
-  <img class='gatsby-resp-image-image' alt='boj-2293-01' title='' src='/static/044ffd564aeb57da2ec7e9d4b6496805/ca1dc/boj-2293-01.png' srcset='/static/044ffd564aeb57da2ec7e9d4b6496805/e7570/boj-2293-01.png 170w,
+  <img class='gatsby-resp-image-image' alt='boj 2293 01' title='' src='/static/044ffd564aeb57da2ec7e9d4b6496805/ca1dc/boj-2293-01.png' srcset='/static/044ffd564aeb57da2ec7e9d4b6496805/e7570/boj-2293-01.png 170w,
 /static/044ffd564aeb57da2ec7e9d4b6496805/f46e7/boj-2293-01.png 340w,
 /static/044ffd564aeb57da2ec7e9d4b6496805/ca1dc/boj-2293-01.png 680w,
 /static/044ffd564aeb57da2ec7e9d4b6496805/02d09/boj-2293-01.png 1020w,
@@ -241,15 +241,15 @@ data-styled.g45[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"yzdKT,ivnFos,"}
 /static/044ffd564aeb57da2ec7e9d4b6496805/600f6/boj-2293-01.png 1548w' sizes='(max-width: 680px) 100vw, 680px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
   </a>
     </span>
-    <figcaption class='gatsby-resp-image-figcaption'>boj-2293-01</figcaption>
-  </figure></p>
+</figure>
 <p>여기서 같은 색으로 표시된 부분은 모두 중복되는 부분들입니다. 이 문제에서는 이런 부분들을 모두 한 가지의 경우로 보아야 합니다.</p>
 <p>한 번 사용한 동전은 다시 사용하지 않는 방법으로 중복을 피할 수 있습니다. 이전 금액에서 1원을 추가해 3원을 만들었으면, 나중에 또다시 1원을 추가해 3원을 만들면 안됩니다.</p>
-<p><figure class='gatsby-resp-image-figure' style='margin-bottom: 16px;'>
-    <span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; '>
+<p><img src="./" alt="boj-2293-02"></p>
+<figure>
+    <span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 16px;'>
       <a class='gatsby-resp-image-link' href='/static/2bd023d8201fdf526e85589a9b6f8491/7c559/boj-2293-02.png' style='display: block' target='_blank' rel='noopener'>
     <span class='gatsby-resp-image-background-image' style="padding-bottom: 31.176470588235293%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA7klEQVR42pVRQcuCQBD1//8ZL3qQTdQQEhVEVNL0oEIpSURIh1z1fbP7UUSnGnaZBzv75r0ZJU1ThGGIqqqQJAnyPEfTNIiiCH3fQ8S6rvg2lCAI4Louuq7DNE0vgmVZXvgnQl3XIW7btijLUhIPw/CTsmedyJLQtm1J6DgO9mT5RBjXK3C/YxxHnKnBUz3E5zfVnw4UwzBgmqacm7fbISeVNc0SjIETLrIMFr3fLpd/AkHMOR2OeZ5lfseKqqrQNA11XcOyLJSHAxgRVEUBeB7W7RacFvQ4HkEFwGaDhRYZxzEyaiYc+r4v3THG8AfoT8ACH2gCQQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
-  <img class='gatsby-resp-image-image' alt='boj-2293-02' title='' src='/static/2bd023d8201fdf526e85589a9b6f8491/ca1dc/boj-2293-02.png' srcset='/static/2bd023d8201fdf526e85589a9b6f8491/e7570/boj-2293-02.png 170w,
+  <img class='gatsby-resp-image-image' alt='boj 2293 02' title='' src='/static/2bd023d8201fdf526e85589a9b6f8491/ca1dc/boj-2293-02.png' srcset='/static/2bd023d8201fdf526e85589a9b6f8491/e7570/boj-2293-02.png 170w,
 /static/2bd023d8201fdf526e85589a9b6f8491/f46e7/boj-2293-02.png 340w,
 /static/2bd023d8201fdf526e85589a9b6f8491/ca1dc/boj-2293-02.png 680w,
 /static/2bd023d8201fdf526e85589a9b6f8491/02d09/boj-2293-02.png 1020w,
@@ -257,8 +257,7 @@ data-styled.g45[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"yzdKT,ivnFos,"}
 /static/2bd023d8201fdf526e85589a9b6f8491/7c559/boj-2293-02.png 1540w' sizes='(max-width: 680px) 100vw, 680px' style='width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;' loading='lazy' decoding='async'>
   </a>
     </span>
-    <figcaption class='gatsby-resp-image-figcaption'>boj-2293-02</figcaption>
-  </figure></p>
+</figure>
 <p>1원짜리 동전을 추가해서 3원을 만들고, 2원짜리 동전을 추가해서 3원을 만든 다음에 다시 1원짜리 동전을 추가해서 3원을 만들면 안된다는 것입니다. 위 그림에서 빨간색으로 표시된 부분들이 다시 1원짜리 동전을 추가해서 3원, 4원을 만든 경우들입니다.(제외되어야 할 경우들입니다.)</p>
 <p>그리고 2원짜리 동전을 추가해서 금액을 만드는 경우에는 1원짜리를 사용해서 만든 경우에 추가할 수 있습니다. 즉, 이전에 사용한 동전들로 만든 경우의 수를 활용하면 됩니다.</p>
 <p>이렇게 구현하기 위해서 동전들을 순회하며 금액을 만들 수 있는 방법들을 구하면 됩니다.</p>
@@ -293,4 +292,4 @@ dp<span class="token punctuation">[</span><span class="token number">0</span><sp
           >
             window.___chunkMapping="{\"app\":[\"/app-df63428fae7da601a3db.js\"],\"component---src-pages-404-jsx\":[\"/component---src-pages-404-jsx-7fdf3d1b5138b7a32e91.js\"],\"component---src-pages-index-jsx\":[\"/component---src-pages-index-jsx-2af94d1cb616b14ff337.js\"],\"component---src-pages-search-jsx\":[\"/component---src-pages-search-jsx-b2facfdcd616a3414258.js\"],\"component---src-pages-series-jsx\":[\"/component---src-pages-series-jsx-242ca9616321c84d88de.js\"],\"component---src-pages-tags-jsx\":[\"/component---src-pages-tags-jsx-a4b031c9a03d0953460f.js\"],\"component---src-templates-post-jsx\":[\"/component---src-templates-post-jsx-fa75107ebfa2bafe70f5.js\"],\"component---src-templates-series-jsx\":[\"/component---src-templates-series-jsx-68450f98667b958c5a34.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="6da5b82a61b227a1aeb2";</script><script src="/webpack-runtime-fb1cdee1cb87b16fbab9.js" async></script><script src="/framework-68c60adb84268a3a048a.js" async></script><script src="/app-df63428fae7da601a3db.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="675204b2915d3dd76f6c";</script><script src="/webpack-runtime-fb1cdee1cb87b16fbab9.js" async></script><script src="/framework-68c60adb84268a3a048a.js" async></script><script src="/app-df63428fae7da601a3db.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
