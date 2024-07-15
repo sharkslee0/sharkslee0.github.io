@@ -43,7 +43,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-styled-components",
-    "gatsby-remark-reading-time",
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -70,9 +69,9 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        commonmark: true,
+        // commonmark: true,
         footnotes: true,
-        pedantic: true,
+        // pedantic: true,
         gfm: true,
         plugins: [
           {

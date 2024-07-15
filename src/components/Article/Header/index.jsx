@@ -36,14 +36,13 @@ const Date = styled.span`
   color: ${props => props.theme.colors.secondaryText};
 `
 
-const Header = ({ title, date, tags, minToRead }) => {
+const Header = ({ title, date, tags }) => {
   return (
     <Wrapper>
       <ArticleTitle> {title} </ArticleTitle>
       <Information>
         <Author> @{author} </Author>
         <Date>· {date} </Date>
-        {/* <Date>· {minToRead} min read </Date> */}
       </Information>
       {tags && <TagList tagList={tags} />}
       <Divider mt="0" />
