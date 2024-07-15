@@ -12,11 +12,7 @@ tags:
 
 ## ☘️ 문제
 
-[2560번: 짚신벌레
-
-첫째 줄에 a, b, d, N을 나타내는 네 정수가 빈칸 하나를 사이에 두고 차례로 주어진다. 단, 0 ＜ a ＜ b ＜ d ≤ 10,000이고, 1 ≤ N ≤ 1,000,000이다.
-
-www.acmicpc.net](https://www.acmicpc.net/problem/2560)
+https://www.acmicpc.net/problem/2560
 
 ## ☘️ 풀이
 

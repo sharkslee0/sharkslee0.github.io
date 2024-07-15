@@ -10,11 +10,7 @@ tags:
 
 ## ☘️ 문제
 
-[프로그래머스
-
-코드 중심의 개발자 채용. 스택 기반의 포지션 매칭. 프로그래머스의 개발자 맞춤형 프로필을 등록하고, 나와 기술 궁합이 잘 맞는 기업들을 매칭 받으세요.
-
-programmers.co.kr](https://school.programmers.co.kr/learn/courses/30/lessons/67259)
+https://school.programmers.co.kr/learn/courses/30/lessons/67259
 
 ## ☘️ 풀이
 

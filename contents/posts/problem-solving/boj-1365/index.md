@@ -13,11 +13,7 @@ tags:
 
 ## ☘️ 문제
 
-[1365번: 꼬인 전깃줄
-
-첫 줄에 전봇대의 개수 N(1 ≤ N ≤ 100,000)이 주어지고, 이어서 N보다 작거나 같은 자연수가 N개 주어진다. i번째 줄에 입력되는 자연수는 길 왼쪽에 i번째 전봇대와 연결된 길 오른편의 전봇대가
-
-www.acmicpc.net](https://www.acmicpc.net/problem/1365)
+https://www.acmicpc.net/problem/1365
 
 ## ☘️ 풀이
 
