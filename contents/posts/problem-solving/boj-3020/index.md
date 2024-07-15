@@ -1,9 +1,13 @@
 ---
 title: "[백준/BOJ] 3020. 개똥벌레 (파이썬/자바)"
-date: 2024-04-01
+date: 2024-04-03
 tags:
   - PS
   - BOJ
+  - 백준
+  - Python
+  - Java
+  - 누적합
 ---
 
 ## ☘️ 문제
@@ -20,7 +24,7 @@ https://www.acmicpc.net/problem/3020
 
 ## ☘️ 전체 코드 (파이썬)
 
-```
+```python
 import sys
 
 input = sys.stdin.readline
@@ -61,7 +65,7 @@ print(answer, count)
 
 ## ☘️ 전체 코드 (자바)
 
-```
+```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

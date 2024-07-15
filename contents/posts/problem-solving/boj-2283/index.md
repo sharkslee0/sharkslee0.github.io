@@ -1,14 +1,22 @@
 ---
-title: "[백준/BOJ] 13144. List of Unique Numbers (파이썬)"
-date: 2024-04-01
+title: "[백준/BOJ] 2283. 구간 자르기 (파이썬)"
+date: 2024-04-08
 tags:
   - PS
   - BOJ
+  - 백준
+  - Python
+  - 투포인터
+  - 누적합
 ---
 
 ## ☘️ 문제
 
-https://www.acmicpc.net/problem/2283
+[2283번: 구간 자르기
+
+1번째 줄에 정수 N, K(1 ≤ N ≤ 1,000, 1 ≤ K ≤ 1,000,000,000)가 주어진다. 2~N+1번째 줄에 각 구간의 왼쪽 끝점과 오른쪽 끝점의 위치가 주어진다. 양 끝점의 위치는 0 이상 1,000,000 이하의 정수이다.
+
+www.acmicpc.net](https://www.acmicpc.net/problem/2283)
 
 ## ☘️ 풀이
 
@@ -22,7 +30,7 @@ https://www.acmicpc.net/problem/2283
 
 ## ☘️ 전체 코드 (파이썬)
 
-```
+```python
 import sys
 
 input = sys.stdin.readline

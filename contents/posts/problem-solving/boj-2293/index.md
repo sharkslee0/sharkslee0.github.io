@@ -1,9 +1,12 @@
 ---
 title: "[백준/BOJ] 2293. 동전 1 (파이썬)"
-date: 2024-04-01
+date: 2024-04-04
 tags:
   - PS
   - BOJ
+  - 백준
+  - Python
+  - 다이나믹프로그래밍
 ---
 
 ## ☘️ 문제
@@ -32,7 +35,7 @@ https://www.acmicpc.net/problem/2293
 
 ## ☘️ 전체 코드 (파이썬)
 
-```
+```python
 import sys
 
 input = sys.stdin.readline
