@@ -11,7 +11,7 @@ const Post = ({ data }) => {
   const post = data.markdownRemark
   const { previous, next, seriesList } = data
 
-  const { title, date, update, tags, series } = post.frontmatter
+  const { title, date, tags, series } = post.frontmatter
   const { excerpt } = post
   const { slug } = post.fields
 
@@ -36,7 +36,7 @@ const Post = ({ data }) => {
     <Layout>
       <SEO title={title} description={excerpt} url={`${siteUrl}${slug}`} />
       <Article>
-        <Article.Header title={title} date={date} update={update} tags={tags} />
+        <Article.Header title={title} date={date} tags={tags} />
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}
@@ -68,7 +68,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        update(formatString: "MMMM DD, YYYY")
         tags
         series
       }
