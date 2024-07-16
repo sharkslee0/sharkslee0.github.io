@@ -111,7 +111,7 @@ HTTP 통신을 시작할 때 TCP의 3-way handshake를 진행합니다. HTTP 통
 
 AWS 문서에도 나왔다시피 Server에서 먼저 connection을 닫아버려서 그렇습니다. ALB에서는 아직 보낼 데이터가 있는데 Server에서 HTTP 연결을 마무리하는 FIN을 보내고 연결을 끝냈습니다. 닫힌 소켓에 대해 응답을 받을 수 없으니 Client에게는 502 상태 코드를 보내게 됩니다.
 
-### # request_processing_time, target_processing_time, response_processing_time
+### request_processing_time, target_processing_time, response_processing_time
 
 <figure>
     <img src="img/aws-alb-502-11.png">
