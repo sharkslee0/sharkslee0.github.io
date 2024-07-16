@@ -12,6 +12,7 @@ import {
   FaRss,
   FaSearch,
   FaListUl,
+  FaFolderOpen,
 } from "react-icons/fa"
 
 const HeaderWrapper = styled.header`
@@ -152,6 +153,9 @@ const Header = ({ toggleTheme }) => {
           </ToggleWrapper>
           <Link to="/tags">
             <FaTags />
+          </Link>
+          <Link to="/categories">
+            <FaFolderOpen />
           </Link>
           <Link to="/series">
             <FaListUl />
