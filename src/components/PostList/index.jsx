@@ -73,6 +73,9 @@ const PostList = ({ postList }) => {
         const { title, description, date, tags } = post.frontmatter
         const { excerpt } = post
         const { slug } = post.fields
+        const tagList = tags.sort((a, b) =>
+          a.toLowerCase() < b.toLowerCase() ? -1 : 1
+        )
 
         return (
           <>
@@ -86,7 +89,7 @@ const PostList = ({ postList }) => {
               ) : (
                 <Excerpt>{excerpt}</Excerpt>
               )}
-              <TagList tagList={tags} />
+              <TagList tagList={tagList} />
             </PostWrapper>
 
             {postCount - 1 !== i && postList.length - 1 !== i && (

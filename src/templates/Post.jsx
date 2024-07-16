@@ -15,6 +15,10 @@ const Post = ({ data }) => {
   const { excerpt } = post
   const { slug } = post.fields
 
+  const tagList = tags.sort((a, b) =>
+    a.toLowerCase() < b.toLowerCase() ? -1 : 1
+  )
+
   let filteredSeries = []
   if (series !== null) {
     filteredSeries = seriesList.edges.map(seriesPost => {
@@ -36,7 +40,7 @@ const Post = ({ data }) => {
     <Layout>
       <SEO title={title} description={excerpt} url={`${siteUrl}${slug}`} />
       <Article>
-        <Article.Header title={title} date={date} tags={tags} />
+        <Article.Header title={title} date={date} tags={tagList} />
         {filteredSeries.length > 0 && (
           <Article.Series header={series} series={filteredSeries} />
         )}
