@@ -1,6 +1,7 @@
 ---
 title: "[프로그래머스] 67259. 경주로 건설 (파이썬)"
 date: 2024-04-03
+category: "Problem Solving"
 tags:
   - PS
   - 프로그래머스

@@ -1,6 +1,7 @@
 ---
 title: "[백준/BOJ] 3020. 개똥벌레 (파이썬/자바)"
 date: 2024-04-03
+category: "Problem Solving"
 tags:
   - PS
   - BOJ

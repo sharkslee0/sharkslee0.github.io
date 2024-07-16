@@ -1,6 +1,7 @@
 ---
 title: "[백준/BOJ] 2560. 짚신벌레 (파이썬)"
 date: 2024-04-03
+category: "Problem Solving"
 tags:
   - PS
   - BOJ

@@ -7,8 +7,6 @@ import { Link } from "gatsby"
 import Title from "components/Title"
 import Divider from "components/Divider"
 
-import kebabCase from "lodash/kebabCase"
-
 const CategoriesListWrapper = styled.div`
   margin-bottom: 60px;
   @media (max-width: 768px) {

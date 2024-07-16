@@ -1,6 +1,7 @@
 ---
 title: "[백준/BOJ] 2283. 구간 자르기 (파이썬)"
 date: 2024-04-08
+category: "Problem Solving"
 tags:
   - PS
   - BOJ

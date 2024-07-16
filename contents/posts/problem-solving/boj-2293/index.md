@@ -1,6 +1,7 @@
 ---
 title: "[백준/BOJ] 2293. 동전 1 (파이썬)"
 date: 2024-04-04
+category: "Problem Solving"
 tags:
   - PS
   - BOJ

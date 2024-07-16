@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 import Layout from "components/Layout"
 import SEO from "components/SEO"
-import PostList from "components/PostList"
+import PostBreifList from "components/PostBreifList"
 import Divider from "components/Divider"
 
 import { description, siteUrl } from "../../blog-config"
@@ -53,7 +53,7 @@ const Date = styled.span`
   font-weight: lighter;
 `
 
-const Category = ({ data, pageContext }) => {
+const Categories = ({ data, pageContext }) => {
   const categoryName = pageContext.category
   const posts = data.posts.nodes
 
@@ -80,12 +80,12 @@ const Category = ({ data, pageContext }) => {
         <Divider />
       </Header>
 
-      <PostList postList={posts} />
+      <PostBreifList postList={posts} />
     </Layout>
   )
 }
 
-export default Category
+export default Categories
 
 export const pageQuery = graphql`
   query BlogCategoriesByCategoryName($category: String) {

@@ -1,6 +1,7 @@
 ---
 title: "[백준/BOJ] 22862. 가장 긴 짝수 연속한 부분 수열 (large) (파이썬)"
 date: 2024-04-01
+category: "Problem Solving"
 tags:
   - PS
   - BOJ

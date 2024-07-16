@@ -1,13 +1,14 @@
 ---
 title: "AWS ALB가 502를 내뱉는다"
 date: 2024-04-12
+category: 트러블슈팅
 tags:
   - whileTrue
   - ConnectionTimeout
   - keep-alive
   - AWS
   - ALB
-  - 502
+  - "502"
 ---
 
 ## 문제 발생
