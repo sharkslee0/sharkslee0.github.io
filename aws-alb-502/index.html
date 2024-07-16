@@ -366,7 +366,7 @@ data-styled.g45[id="Footer__HiddenWrapper-sc-zqxmks-9"]{content:"yzdKT,ivnFos,"}
     <figcaption>출처: https://www.tessian.com/blog/how-to-fix-http-502-errors/</figcaption>
 </figure>
 <p>AWS 문서에도 나왔다시피 Server에서 먼저 connection을 닫아버려서 그렇습니다. ALB에서는 아직 보낼 데이터가 있는데 Server에서 HTTP 연결을 마무리하는 FIN을 보내고 연결을 끝냈습니다. 닫힌 소켓에 대해 응답을 받을 수 없으니 Client에게는 502 상태 코드를 보내게 됩니다.</p>
-<h3># request_processing_time, target_processing_time, response_processing_time</h3>
+<h3>request_processing_time, target_processing_time, response_processing_time</h3>
 <figure>
     <span class='gatsby-resp-image-wrapper' style='position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 16px;'>
       <a class='gatsby-resp-image-link' href='/static/ebc9e38839cf32fb290f84077bd262ab/6b1ac/aws-alb-502-11.png' style='display: block' target='_blank' rel='noopener'>
