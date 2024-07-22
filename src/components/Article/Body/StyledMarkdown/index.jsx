@@ -219,12 +219,14 @@ const StyledMarkdown = styled.div`
 
   & a {
     padding: 1.6px 0;
-    color: ${props => props.theme.colors.text};
+    color: #2883f3;
+    /* color: ${props => props.theme.colors.text}; */
   }
 
   & a:hover {
-    background-color: ${props => props.theme.colors.text};
-    color: ${props => props.theme.colors.hoveredLinkText};
+    color: #6ca9f4;
+    /* background-color: ${props => props.theme.colors.text}; */
+    /* color: ${props => props.theme.colors.hoveredLinkText}; */
   }
 `
 
