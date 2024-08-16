@@ -13,6 +13,11 @@ tags:
 
 ## Exception의 종류
 
+<figure>
+   <img src="img/java-exception-hierarchy.png">
+   <figcaption>출처: https://www.javamex.com/tutorials/exceptions/exceptions_hierarchy.shtml</figcaption>
+</figure>
+
 Exception은 Throwable 클래스 혹은 그 서브클래스들의 인스턴스로 표현된다. 즉, Throwable 클래스와 그의 모든 서브클래스는 모두 예외를 나타내는 클래스들이다.
 
 Throwable 클래스의 직접 서브클래스(direct subclass)로는 Exception 클래스와 Error 클래스가 있다.
@@ -22,20 +27,20 @@ Throwable 클래스의 직접 서브클래스(direct subclass)로는 Exception �
 
 Exception은 크게 Unchecked Exception과 Checked Exception으로 나뉜다.
 
-- Unchecked Exception : Error 클래스, RuntimeException 클래스와 그의 서브 클래스를 말한다.
-- Checked Exception : RuntimeException 클래스가 아닌 모든 Exception의 서브 클래스를 말한다.
+- Unchecked Exception : Error 클래스, RuntimeException 클래스와 그의 서브 클래스를 말한다. 위 그림에서 빨간색에 해당하는 부분이다.
+- Checked Exception : Unchecked Exception(RuntimeException) 클래스가 아닌 모든 Exception의 서브 클래스를 말한다. 위 그림에서 빨간색이 아닌 파란색에 해당하는 부분이다.
 
 ### Unchecked Exception
 
-Unchecked Exception은 Error 클래스, RuntimeException 클래스와 그의 서브 클래스를 말한다.
+Unchecked Exception은 <u>Error 클래스, RuntimeException 클래스와 그의 서브 클래스</u>를 말한다.
 
-컴파일 타임에 예외 처리를 위한 핸들러의 유무를 확인하지 않는다. 따라서, 개발자가 예외 처리 핸들러를 구현하지 않아도 된다. 물론, 원하는 경우에는 `catch`문을 사용해서 예상되는 RuntimeException 예외를 처리해줄 수 있다.
+컴파일 타임에 예외 처리를 위한 핸들러의 유무를 확인하지 않는다. Exception 처리가 강제되지 않아 개발자가 예외 처리 핸들러를 구현하지 않아도 된다. 물론, 원하는 경우에는 `catch`문을 사용해서 예상되는 RuntimeException 예외를 처리해줄 수 있다.
 
-Error 클래스는 잡아봤자 처리할 수 있는 방법이 없다. 개발자는 애플리케이션 코드에 Error 클래스에 대한 처리는 신경 쓰지 않아도 된다.
+Error 클래스는 시스템 레벨의 심각한 문제를 나타내며, 일반적으로 개발자가 이를 처리할 수 있는 방법이 거의 없다. 예를 들어, `OutOfMemoryError`나 `StackOverflowError`와 같은 오류는 복구가 거의 불가능한 상황을 의미한다. 이러한 이유로 개발자는 애플리케이션 코드에서 `Error` 클래스에 대한 처리를 시도하지 않는 것이 일반적이다. 그렇기에 Unchecked Exception이라고 할 때는 RuntimeException과 그 하위 클래스를 주로 의미한다.
 
 ### Checked Exception
 
-Checked Exception 클래스는 Unchecked Exception 클래스가 아닌 모든 Exception 클래스이다. 즉, RuntimeException 클래스 이외의 모든 Exception 클래스의 서브 클래스이다.
+Checked Exception 클래스는 <u>Unchecked Exception 클래스가 아닌 모든 Exception 클래스</u>이다. 즉, RuntimeException 클래스 이외의 모든 Exception 클래스의 서브 클래스이다.
 
 자바는 Checked Exception에 대한 핸들러를 포함하도록 강제하여, 컴파일 타임에 Checked Exception에 대한 핸들러가 있는지 확인한다. 개발자는 예외 처리 핸들러를 반드시 포함해야 한다. `catch`문으로 처리하거나 `throws`를 이용해서 다른 곳에서 처리하도록 해야 한다. 이런 예외 처리 핸들러의 유무를 컴파일 타임에 확인함으로써 처리되지 않는 예외의 수를 줄일 수 있다.
 
@@ -49,13 +54,44 @@ Checked Exception 클래스는 Unchecked Exception 클래스가 아닌 모든 Ex
 
 사용자가 특정 파일을 읽으려는데 파일이 없어 `IOException`이 발생하는 경우, 다른 파일을 선택하도록 유도하는 것으로 해결할 수 있다. 혹은 DB에 접속하는데에 실패하여 `SQLException`이 발생하는 경우, 여러 번 재시도하도록 할 수도 있다.
 
+```java
+int maxretry = MAX_RETRY;
+while (maxretry-- > 0) {
+   try {
+
+   } catch (SomeException e) {
+
+   } finally {
+
+   }
+}
+throw new RetryFailedException();
+// 출처: 토비의 스프링 3.1 Vol.1 p286
+```
+
 이처럼 사용자에게는 원하는 것처럼 동작하지 않았기 때문에 예외 상황으로 비쳐지더라도 애플리케이션에서는 정상적인 흐름에 따라 진행되어야 한다. 물론, 단순히 에러 메시지를 사용자에게 보여주는 것은 예외 복구로 볼 수 없다.
 
 ### 예외처리 회피
 
 자신이 예외 처리를 하지 않고 자신을 호출한 곳에서 예외 처리를 하도록 던져버리는 것이다. `throws`문을 활용해서 예외 발생시 바로 던져버리거나, `catch`문으로 일단은 잡아 로그를 남기고 다시 예외를 던진다.
 
-던질 것인지 말 것인지, 던져진 예외를 어디서 잡아서 처리할 것인지는 메소드의 역할에 달렸다. 자신에게서 발생한 예외를 그냥 던져버리는 것은 무책임한 책임회피이고, 코드적으로 봤을 때에도 적절하지 않다.
+```java
+public void add() throws SQLException {
+
+}
+```
+
+```java
+public void add() throws SQLException {
+   try {
+
+   } catch (SQLException e) {
+      // 로그 출력
+      throw e;
+   }
+}
+// 출처: 토비의 스프링 3.1 Vol.1 p287
+```
 
 ### 예외 전환
 
@@ -67,13 +103,50 @@ Checked Exception 클래스는 Unchecked Exception 클래스가 아닌 모든 Ex
 
    예를 들어, 새로운 사용자를 등록하는데 이미 같은 아이디의 사용자가 존재하는 경우 `SQLException`이 발생한다. 하지만, 외부에 그대로 `SQLException`을 던져버리면 서비스 계층에서는 왜 `SQLException`이 발생했는지, 처리할 수 있는 것인지, 어떻게 처리할 지 등을 알 수 없다. 중복된 아이디에 대한 예외는 충분히 처리할 수 있기 때문에 적절한 예외로 바꾸어 던지는 것이 좋다.
 
+   ```java
+   public void add(User user) throws DuplicateUserIdException, SQLException {
+      try {
+
+      } catch (SQLException e) {
+         if (e.getErrorCode() == MysqlErrorNumbers.ER_DUP_ENTRY) {
+            throw DuplicateUserIdException(e);
+         } else {
+            throw e;
+         }
+      }
+   }
+   // 출처: 토비의 스프링 3.1 Vol.1 p289
+   ```
+
 2. 예외 처리를 쉽고 단순하게 만들기 위해서 사용한다.
 
    주로 예외 처리를 강제하는 Checked Exception에서 Unchecked Exception으로 바꾸는 경우에 사용한다. 예외 복구를 할 수 없거나 비즈니스적으로 의미가 없는 Checked Exception이라면 빠르게 RuntimeException으로 바꿔서 던지는 편이 좋다.
 
 발생한 예외를 다른 예외로 전환하는 경우, 원래 발생한 예외를 담아 중첩 예외를 만드는 것이 좋다. 중첩 예외는 `getCause()` 메소드를 이용해서 처음 발생한 예외가 무엇인지 파악할 수 있다.
 
-## JVM에서 예외를 처리하는 방법
+## JVM에서 예외를 처리하는 방법 (예외 발생 시 동작 방법)
+
+1.  예외가 발생하면 JVM은 Exception 객체를 생성한다.
+2.  Exception 객체가 생성되는 과정에서 `fillInStackTrace` 메소드가 호출된다.
+3.  `fillInStackTrace` 메소드 호출로 JVM은 예외 발생 시점의 호출 스택에서 각 스택 프레임 정보를 수집하고, 해당 정보가 Exception 객체의 스택 트레이스로 채워진다.
+
+    이때 수집되는 스택 프레임의 정보로는 클래스 이름, 메소드 이름, 파일 이름, 라인 번호 등등이 있다.
+
+    ```
+    // 스택 트레이스 예시
+    Exception in thread "main" java.lang.NullPointerException: Cannot load from object array because "BOJ2563.papers" is null
+      at BOJ2563.setUp(BOJ2563.java:45)
+      at BOJ2563.main(BOJ2563.java:15)
+    ```
+
+4.  호출된 메소드의 스택을 역순으로 올라가면서(unwinding the stack) Exception을 처리할 수 있는 예외 처리 핸들러가 있는지 확인한다.
+
+    <figure>
+       <img src="img/java-exception-stack-unwinding.png">
+       <figcaption>출처: https://www.geeksforgeeks.org/exceptions-in-java/</figcaption>
+    </figure>
+
+5.  만약 예외 처리 핸들러를 발견하지 못하면, JVM은 해당 스레드를 종료시키며, 메인 스레드에서 예외가 처리되지 않으면 프로그램도 종료된다.
 
 ## 예외 처리 비용
 
@@ -90,16 +163,19 @@ ExceptionBenchmark.throwExceptionAndUnwindStackTrace      avgt   10  326.560 ± 
 ExceptionBenchmark.throwExceptionWithoutAddingStackTrace  avgt   10    1.185 ± 0.015  ms/op
 ```
 
-1. 예외가 발생하고 잡는 것은 일반 상황에 비해 100배 정도의 시간이 소요된다.
-2. try ~ catch문은 성능에 큰 영향을 주지 않는다.
-3. 예외 객체를 만들어내는 과정이 대부분의 시간을 잡아먹는다. → 그 중에서도 Stack Trace를 생성하는 과정이 시간이 오래 걸린다.
-4. 예외를 다시 타고 올라가는 것(unwind)하는 것 역시도 많은 시간 소요가 된다.
+위 글과 [The Exceptional Performance of Lil' Exception](https://shipilev.net/blog/2014/exceptional-performance/) 글에서의 결론은 다음과 같다.
 
-## [번외] Checked Exception에 대한 이슈
+1. 예외가 발생하고 처리하는 과정은 일반적인 상황에 비해 더 많은 비용이 든다. 진정으로 예외가 필요한 곳에서만 예외 처리를 사용하자.
+2. try~catch문 자체는 성능에 큰 영향을 주지 않는다.
+3. 예외 처리 비용의 대부분은 **스택 트레이스를 구성하는 것**과 **스택을 역순으로 따라가며 예외 처리 핸들러를 찾는 과정**에서 발생한다.
+4. 스택 트레이스를 구성하는 데에 드는 비용은 Exception 객체가 생성되는 시점의 호출 스택 깊이에 비례한다.
+5. 예외를 캐싱하거나 `fillInStackTrace` 메소드를 오버라이드함으로써 최적화를 이룰 수 있다. 스택 트레이스의 정보가 생성되지 않을 수 있기 때문에 매우 특수한 경우에만 진행해야 한다.
+
+## (번외) Checked Exception에 대한 이슈
 
 개발자에게 예외 처리를 강제하는 Checked Exception에 대한 이슈가 있다.
 
-무조건 예상되는 예외를 처리하도록 하여 서비스의 안정성을 도모하고자 했지만, 이를 귀찮게 느낀 개발자들은 `catch`문으로 잡아만 두고 아무런 처리도 하지 않는다거나, 의미 없이 `throws Exception`만 한다는 것이다.
+무조건 예상되는 예외를 처리하도록 하여 서비스의 안정성을 도모하고자 했지만, 이를 귀찮게 느낀 개발자들은 `catch`문으로 잡아만 두고 아무런 처리도 하지 않는다거나, 의미 없이 `throws Exception`만 한다는 것이다. Checked Exception이 처음 등장했을 때와 다르게 최근에는 Unchecked Exception을 사용하자는 의견이 많아지고 있다고 한다.
 
 더 자세한 내용은 아래 글을 참고하자.
 
@@ -107,9 +183,10 @@ ExceptionBenchmark.throwExceptionWithoutAddingStackTrace  avgt   10    1.185 ± 
 
 ## 참고 자료
 
-- 토비의 스프링 3.1 Vol. 1
+- 토비의 스프링 3.1 Vol.1 4장
 - https://docs.oracle.com/javase/specs/jls/se22/jls22.pdf
 - https://docs.oracle.com/javase/specs/jvms/se22/jvms22.pdf
 - https://stackoverflow.com/questions/36343209/which-part-of-throwing-an-exception-is-expensive
 - https://www.baeldung.com/java-exceptions-performance
 - https://shipilev.net/blog/2014/exceptional-performance/
+- https://meetup.nhncloud.com/posts/47
