@@ -1,10 +1,10 @@
 module.exports = {
-  title: "pointing the dots",
+  title: "modisfive's 블로그",
   description: "안녕하세요 :)",
-  author: "namgons",
-  siteUrl: "https://namgons.github.io/",
+  author: "modisfive",
+  siteUrl: "https://modisfive.github.io/",
   links: {
-    github: "https://github.com/namgons",
+    github: "https://github.com/modisfive",
     linkedIn: "https://www.linkedin.com/in/namgonlee/",
     email: "mailto:nglee.dev@gmail.com",
   },
