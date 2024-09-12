@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://namgons.github.io/sitemap-index.xml
-Host: https://namgons.github.io
+Sitemap: https://modisfive.github.io/sitemap-index.xml
+Host: https://modisfive.github.io
