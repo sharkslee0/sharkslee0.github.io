@@ -1,6 +1,7 @@
 ---
 title: "[Network] HTTP와 HTTPS"
 date: 2024-03-26
+series: "네트워크/Network"
 tags:
   - HTTP
   - HTTPS

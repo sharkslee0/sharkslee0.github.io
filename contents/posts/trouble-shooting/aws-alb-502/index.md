@@ -1,6 +1,7 @@
 ---
 title: "AWS ALB가 502를 내뱉는다"
 date: 2024-04-12
+series: "트러블 슈팅"
 tags:
   - whileTrue
   - ConnectionTimeout

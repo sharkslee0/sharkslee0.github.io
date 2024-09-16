@@ -1,7 +1,7 @@
 ---
 title: "whileTrue 프로젝트 후기"
 date: 2024-03-14
-series: "whileTrue 프로젝트"
+series: "프로젝트 후기"
 tags:
   - whileTrue
   - Chrome Extension
