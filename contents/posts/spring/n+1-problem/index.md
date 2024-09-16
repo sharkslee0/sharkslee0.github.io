@@ -1,7 +1,6 @@
 ---
 title: "[JPA] N+1 문제와 해결법"
 date: 2023-09-30
-category: Spring
 tags:
   - Spring
   - JPA

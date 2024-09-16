@@ -1,7 +1,6 @@
 ---
 title: "[Java] Exception에 대한 고찰"
 date: 2024-08-05
-category: "Java"
 tags:
   - Java
   - Exception

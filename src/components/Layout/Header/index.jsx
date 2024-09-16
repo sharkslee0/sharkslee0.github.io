@@ -154,9 +154,6 @@ const Header = ({ toggleTheme }) => {
           <Link to="/tags">
             <FaTags />
           </Link>
-          <Link to="/categories">
-            <FaFolderOpen />
-          </Link>
           <Link to="/series">
             <FaListUl />
           </Link>

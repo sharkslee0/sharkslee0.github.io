@@ -1,7 +1,6 @@
 ---
 title: "whileTrue 프로젝트 후기"
 date: 2024-03-14
-category: "프로젝트 후기"
 series: "whileTrue 프로젝트"
 tags:
   - whileTrue

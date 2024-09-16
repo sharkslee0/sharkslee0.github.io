@@ -6,7 +6,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const postTemplate = require.resolve(`./src/templates/Post.jsx`)
   const seriesTemplate = require.resolve(`./src/templates/Series.jsx`)
-  const categoriesTemplate = require.resolve(`./src/templates/Categories.jsx`)
 
   const result = await graphql(`
     {
@@ -27,12 +26,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
-        }
-      }
-      categoriesGroup: allMarkdownRemark {
-        group(field: { frontmatter: { category: SELECT } }) {
-          fieldValue
-          totalCount
         }
       }
     }
@@ -57,7 +50,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     },
     []
   )
-  const categories = result.data.categoriesGroup.group
 
   if (posts.length > 0) {
     posts.forEach((post, index) => {
@@ -89,18 +81,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
-
-  categories.forEach(category => {
-    createPage({
-      path: `/categories/${_.replace(category.fieldValue, /\s/g, "-")}`,
-      // 페이지를 생성하기 위해서 사용하는 template component
-      component: categoriesTemplate,
-      // 페이지에 전달하고 싶은 값이 있으면 context에 추가한다. 여기서는 카테고리 이름을 넣었다.
-      context: {
-        category: category.fieldValue,
-      },
-    })
-  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
