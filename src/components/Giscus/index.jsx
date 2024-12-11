@@ -5,7 +5,7 @@ const MyGiscus = ({ theme }) => {
   return (
     <Giscus
       id="comments"
-      repo="modisfive/giscus"
+      repo="sharkslee0/giscus"
       repoId="R_kgDOJqNN5Q"
       category="Announcements"
       categoryId="DIC_kwDOJqNN5c4CW4sz"

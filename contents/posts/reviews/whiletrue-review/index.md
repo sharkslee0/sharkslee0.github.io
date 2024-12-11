@@ -144,5 +144,5 @@ tags:
 
 ## 관련 링크
 
-- [GitHub](https://github.com/modisfive/whileTrue)
+- [GitHub](https://github.com/sharkslee0/whileTrue)
 - [크롬 웹 스토어](https://chromewebstore.google.com/detail/whiletrue/ockglcdfpkebaiaaocinjdcpiieceocn)
