@@ -1,5 +1,5 @@
 module.exports = {
-  title: "깨지고 부셔지기",
+  title: "sharkslee0.github.io",
   description: "안녕하세요 :)",
   author: "sharkslee0",
   siteUrl: "https://sharkslee0.github.io/",
